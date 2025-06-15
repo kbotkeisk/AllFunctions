@@ -17,29 +17,7 @@
 // #define LILYGO_T_ETH_LITE_ESP32S3
 // Product Link : N.A
 #define LILYGO_T_ETH_ELITE_ESP32S3
-
-#if   defined(LILYGO_T_INTERNET_POE)
-#define uS_TO_S_FACTOR      1000000ULL  /* Conversion factor for micro seconds to seconds */
-#define TIME_TO_SLEEP       30          /* Time ESP32 will go to sleep (in seconds) */
-
-#define UART_BAUD           115200
-
-#define MODEM_TX            27
-#define MODEM_RX            26
-#define MODEM_PWRKEY        4
-#define MODEM_DTR           32
-#define MODEM_RI            33
-#define MODEM_FLIGHT        25
-#define MODEM_STATUS        34
-
-#define SD_MISO             2
-#define SD_MOSI             15
-#define SD_SCLK             14
-#define SD_CS               13
-
-#define LED_PIN             12
-
-#elif defined(LILYGO_T_ETH_ELITE_ESP32S3)
+#if defined(LILYGO_T_ETH_ELITE_ESP32S3)
 
 #define uS_TO_S_FACTOR      1000000ULL  /* Conversion factor for micro seconds to seconds */
 #define TIME_TO_SLEEP       30          /* Time ESP32 will go to sleep (in seconds) */
@@ -76,15 +54,6 @@
 #define RADIO_BUSY_PIN                  16
 
 #define ADC_BUTTONS_PIN                 7
-
-#define MODEM_RX                    4
-#define MODEM_TX                    6
-#define MODEM_DTR                   5
-#define MODEM_RI                    1
-#define MODEM_PWRKEY                3
-
-#define GPS_RX_PIN                      39
-#define GPS_TX_PIN                      42
 
 #define LED_PIN                         38
 
